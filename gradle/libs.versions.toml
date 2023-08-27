@@ -1,13 +1,13 @@
 # Sharing dependency versions between projects
 # https://docs.gradle.org/current/userguide/platforms.html
 [versions]
-detekt = "1.22.0"
+detekt = "1.23.1"
 dokka = "1.8.10"
 java = "11"
-junit-jupiter = "5.9.3"
-kotest = "5.6.1"
-kotlin = "1.8.21"
-kotlinx-coroutines = "1.6.4"
+junit-jupiter = "5.10.0"
+kotest = "5.6.2"
+kotlin = "1.9.10"
+kotlinx-coroutines = "1.7.3"
 
 [libraries]
 detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
@@ -17,13 +17,13 @@ kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.
 kotest-assertions-json = { module = "io.kotest:kotest-assertions-json", version.ref = "kotest" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
 kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
-plugin-android = "com.android.tools.build:gradle:8.0.0"
+plugin-android = "com.android.tools.build:gradle:8.0.2"
 plugin-container-tasks = "dev.petuska:container-tasks-gradle-plugin:0.0.4"
 plugin-detekt = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detekt" }
+plugin-dokka = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka" }
 plugin-git-hooks = "com.github.jakemarsden:git-hooks-gradle-plugin:0.0.2"
 plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 plugin-kotlin-serialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
-plugin-dokka = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka" }
 plugin-nebula-node = "com.netflix.nebula:nebula-node-plugin:3.0.0"
 plugin-versions = "com.github.ben-manes:gradle-versions-plugin:0.46.0"
 plugin-versions-update = "nl.littlerobots.vcu:plugin:0.8.0"
