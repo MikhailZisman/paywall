@@ -100,3 +100,4 @@ at [./.github/workflows/release.yml#L80]`
 * `SIGNING_PASSWORD` - GPG signing key password (if set)
 * `SONATYPE_PASSWORD` - Sonatype PAT username
 * `SONATYPE_USERNAME` - Sonatype PAT password
+
