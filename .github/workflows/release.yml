@@ -128,6 +128,7 @@ jobs:
     defaults:
       run:
         shell: ${{ matrix.os.shell }}
+    environment: publish
     env:
       GH_USERNAME: ${{ github.actor }}
       GH_PASSWORD: ${{ github.token }}
