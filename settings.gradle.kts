@@ -12,7 +12,7 @@ plugins {
 
 enableFeaturePreview("STABLE_CONFIGURATION_CACHE")
 
-rootProject.name = "template-kmp-library"
+rootProject.name = "paywall"
 includeBuild("./build-conventions/")
 include(":tests:test-utils")
 
