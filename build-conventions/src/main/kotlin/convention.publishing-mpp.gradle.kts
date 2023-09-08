@@ -23,6 +23,10 @@ kotlin {
         tasks.withType<GenerateModuleMetadata>()
           .matching { it.publication.orNull == targetPublication }
           .all(action)
+        val signingTasks = tasks.withType<Sign>()
+        tasks.withType<AbstractPublishToMaven>().configureEach {
+          dependsOn(signingTasks)
+        }
       }
     }
   }
